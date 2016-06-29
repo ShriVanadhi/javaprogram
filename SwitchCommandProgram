@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class SwitchCommandProgram {
+    public static void main(String[] args){
+        //Create a Scanner object
+        Scanner input = new Scanner(System.in);
+          //Comment to enter a command
+        System.out.println("Please enter a command");
+        //wait till user enters the command
+        String text = input.nextLine();
+        //using switch to match the user entered text
+        switch(text){
+         //user entered text matches start then execute following statement
+        case "start":
+        System.out.println("Machine started");
+        //break used to ecscapes from loop
+            break;
+        //user entered text matches stop then execute following statement
+        case  "stop":
+        System.out.println("Machine stopped");
+            break;
+         //none of the command matched then default statement executed
+        default:
+        System.out.println("Command not recognized");
+        
+    }
+        
+    }
+    
+}
